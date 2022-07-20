@@ -9,14 +9,16 @@
 <script>
 var num = Math.floor(Math.random()*100)
 document.write(num)
-str = "0-99 »çÀÌÀÇ °ªÀ» ÀÏ·ÂÇÏ½Ã¿À. "
+str = "0-99 사이의 값을 입력하시오. "
 a = []; b = []; c = []
 k = 0
 hint = ""
 while ( true ) {
-  a[k] = prompt(str + a + " " + hint)
-  c[k] = num
-  b[k] = k+1
+  x = prompt(str + a + " " + hint);
+  if (x == null) break;
+  a[k] = x;
+  c[k] = num;
+  b[k] = k+1;
   if ( num == a[k] ) {
     document.write("Congratulation~ You guessed it at " + (k+1) + " times")
     document.write("<br>Your input data is " + a.toString())
