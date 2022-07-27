@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <style>
+            .active {
+                background-color: orange;
+            }
+            
+        </style>
+        <script>
+            window.onload = function() {
+                
+                let title = document.querySelector('#title');
+                let list = document.querySelector('#list');
+                let li = document.querySelectorAll('li');
+                let addBtn = document.querySelector('#add-btn');
+                let listCounter = 1;
+
+                addBtn.addEventListener('click', function() {
+                    let txt = prompt("Enter the title");
+                    list.innerHTML += '<li>' + txt + '</li>';
+
+                    let li = document.querySelectorAll('li');
+                    console.log(li.length);
+                    for (let i = 0; i < li.length; i++) {
+                        li[i].addEventListener('click', function() {
+                            for (let j = 0; j < li.length; j++) {
+                              li[j].removeAttribute('class');
+                            }
+                            this.setAttribute('class', 'active');
+                        });
+                    }
+                });
+
+                for (let i = 0; i < li.length; i++) {
+                    li[i].addEventListener('click', function() {
+                        for (let j = 0; j < li.length; j++) {
+                            li[j].removeAttribute('class');
+                        }
+                        this.setAttribute('class', 'active');
+                    });
+                }
+
+            }
+        </script>
+    
+    </head>
+    <body>
+        <h1 id='title'>Title</h1> 
+        <button id="add-btn">add menu</button>
+        <ul id='list'>
+            <li>title 1</li>
+            <li>title 2</li> 
+            <li>title 3</li>
+        </ul>
+        
+    </body>
+</html>

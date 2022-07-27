@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <script>
+            window.onload = function() {
+                let Jinsu = {name : "Jinsu", age : 21};
+                let Chulsu = {name : "Chulsu", age : 20};
+
+                let btn = document.querySelectorAll('button');
+
+                for (let i = 0; i < btn.length; i++) {
+                    btn[i].onclick = function() {
+                        for (let j = 0; j < btn.length; j++) {
+                            btn[j].innerHTML = "sum";
+                        }
+                        btn[i].innerHTML = (Jinsu.age + Chulsu.age) / 2;
+                        Jinsu.age++;
+                        Chulsu.age++;
+                    }
+                }
+            }
+        </script>
+    
+    </head>
+    <body>
+        <button>sum</button>
+        <br>
+        <button>sum</button>
+        <br>
+        <button>sum</button>
+      
+    </body>
+</html>

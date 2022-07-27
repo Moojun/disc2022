@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+    
+    </head>
+    <body>
+        <script>
+            let mydata = [1, 2, 3, 4, 5];
+            let num = Math.floor(Math.random() * 100);
+            let sum = 15;
+
+            for (let i = 0; i < num; i++) {
+                let num2 = Math.floor(Math.random() * 100);
+                mydata.push(num2);
+                sum += num2;
+
+            }
+            let leng = mydata.length;
+            mydata.push(leng);
+            mydata.push(sum);
+            mydata.push(sum / leng);
+
+            alert("length is : " + mydata[leng] + ", sum is : " + mydata[leng + 1] 
+            + ", avg is : " + mydata[leng + 2]);
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+    
+    </head>
+    <body>
+        <h1></h1>
+        <script>
+            let low = 2;
+            let high = 3;
+            let x = (low + high) / 2;
+            let delta = 0.00000001;
+            let i = 0;
+            while (Math.abs(x * x * x - 10) > delta) {
+
+                i = i + 1;
+
+                if (x * x * x > 10) {
+                    high = x;
+                    x = (low + high) / 2;
+                }
+                else if (x * x * x < 10) {
+                    low = x;
+                    x = (low + high) / 2;
+                }
+
+            }
+            document.querySelector('h1').innerHTML = i + " " + x * x * x;
+        </script>
+
+    </body>
+</html>
