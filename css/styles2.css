@@ -1,0 +1,130 @@
+/* to import 'Lobster', cursive; fonts in #logo h1 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/************ nav **************/
+
+#container {
+  margin: 0 auto;
+  /* width: 100%; */
+  width: 100%;
+}
+
+#logo {
+  float: left; /* 왼쪽 정렬 */
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
+  padding-left: 40px;
+}
+#logo h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  color: yellow;
+  text-shadow: 0 -1px 0 #222;
+}
+
+/* nav{
+  width: 100%;
+  position: fixed;
+  background-color: #212529;
+  background-color: black;
+}  */
+
+nav{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:900px;   /*   너비 */  
+  height:100px;   /* 메뉴 영역 높이 */  
+  padding-top:40px;  /* 메뉴를 아래로 내리기 위해 */  
+}
+/* 
+#navigation {
+  float: right;
+  width: calc(100% - 400px);
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 150px;
+} */
+
+#topMenu {  
+  height: 60px; 
+}
+#topMenu > li {
+  float: left;
+  position: relative;
+}
+#topMenu > li > a {
+  display: block;
+  color: white;
+  font-family: "Montserrat";
+  letter-spacing: 0.0625em;
+  font-weight: 600;
+  text-shadow: 0 -1px 0 #222;
+  padding: 15px 60px;
+}
+#topMenu > li > a:hover {
+  color: yellow;
+  text-shadow: 0 -1px 0 #222;
+}
+#topMenu > li > ul {
+  display: none;
+  position: absolute;
+  width: 215.7px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+#topMenu > li:hover > ul {
+  display: block;
+  z-index: 10;
+}
+#topMenu > li > ul > li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+}
+
+/************ header **************/
+
+/* header {
+  width: 100%;
+  text-align: center;
+  object-fit: cover;
+  background-image: url("../assets/languages.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 19rem;
+  padding-bottom: 22rem;
+} */
+#topImage {
+  width: 100%;
+  text-align: center;
+  object-fit: cover;
+}
+
+/* 
+@media (min-width: 768px) {
+  header {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+} */
