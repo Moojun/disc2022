@@ -1,5 +1,7 @@
 /* to import 'Lobster', cursive; fonts in #logo h1 */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* to import 'Montserrat', sans-serif; fonts in body */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
   margin:0;   
@@ -32,28 +34,30 @@ header{
   width: 100%;    
   height: 100px;   
   background-color:rgb(12, 27, 38);
+  padding-left: 50px;
 }
 
-#logo { 
+/* #logo { 
   float: left;   
   width: 200px;  
   height: 100px;   
   line-height: 100px;
   padding-left: 20px; 
-}
-#logo h1 {
+} */
+#logo {
   font-family: 'Lobster', cursive;
   font-weight: 700;
   font-size: 20px;  
   color: yellow;
-  /* text-shadow:0 -1px 0 #222;  */
+  height: 100px;   
+  line-height: 100px;
 }
 
 #logo2 {
   width: 700px;
   height: 100px;
   line-height: 100px;
-  padding-left: 80px; 
+  padding-left: 200px; 
   font-family: 'Lobster', cursive;
   font-weight: 700;
   font-size: 32px;  
@@ -61,13 +65,12 @@ header{
   color: white;
 }
 
-
 nav {  
   float: right; 
-  /* width: 900px;   */
-  width: calc(100% - 900px);
+  /* width: calc(100% - 900px); */
   height: 100px;  
   padding-top: 40px;  
+  padding-right: 120px;
 }
 #topMenu {  
   height: 60px; 
@@ -82,7 +85,7 @@ nav {
   font-weight: 600;  /* 글자 굵기 */
   text-shadow: 0 1px #07c;  /* 그림자 추가 */
   /* padding:20px 60px; */
-  padding-left: 100px;
+  padding-left: 120px;
   /* padding-bottom: 80px; */
   /* margin-bottom: 80px; */
 }
@@ -95,13 +98,12 @@ nav {
   text-shadow: 0 -1px #07c;  /* 글자가 너무 굵어지지 않도록 */
 }
 
-#topMenu > li > ul { /* 서브 메뉴 스타일 */
-  display: none;  /* 서브 메뉴 처음에는 화면에 안 보이게 */ 
+#topMenu > li > ul { 
+  display: none;  
   position: absolute;  /* 서브 메뉴 포지셔닝 */ 
   width: 160px;
-  background:rgba(255,255,255,0.6);  /* 슬라이드 쇼 비치도록 배경 색 조절 */
+  background: rgba(204, 218, 219, 0.8);
   left: 60px;     
-  /* margin:0; */
 }
 #topMenu > li > ul > li {    
   padding: 10px 10px 10px 60px;   /* 서브 메뉴 항목 */
@@ -137,6 +139,7 @@ nav {
   display: block;
   width: 100%;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .section-heading {
@@ -171,7 +174,7 @@ footer {
   padding-top: 40px;
   vertical-align: middle;
   border-top:2px solid #222;
-  
+  font-family: 'Montserrat', sans-serif;
 }
 
 #footer-conatiner {
