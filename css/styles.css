@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
-  margin:0;   
-  padding:0;  
+  margin: 0;   
+  padding: 0;  
   box-sizing: border-box;  
 }
 
@@ -17,33 +17,30 @@ ul {
   list-style: none;
 }
 
-/* #container {
-  margin:0 auto;  
-  width:100%;    
-} */
 body {
-  margin: 0 auto;
-  width: 100%;
+  /* background-color:rgb(12, 27, 38); */
+  /* background-color: rgb(22, 72, 107); */
+  background-color: white;
+}
+
+#container {
+  margin: 0 auto;  
+  width: 1200px; 
+  overflow: auto;
 }
 
 /*********************************/
-/* 헤더 영역 - 로고와 내비게이션 */
+/* header: logo and navigation */
 /*********************************/
 
 header{
-  width: 100%;    
-  height: 100px;   
-  background-color:rgb(12, 27, 38);
+  width: 1200px;
+  height: 100px;
+  /* background-color:rgb(12, 27, 38); */
+  background-color: rgb(74, 101, 120);
   padding-left: 50px;
 }
 
-/* #logo { 
-  float: left;   
-  width: 200px;  
-  height: 100px;   
-  line-height: 100px;
-  padding-left: 20px; 
-} */
 #logo {
   font-family: 'Lobster', cursive;
   font-weight: 700;
@@ -57,7 +54,7 @@ header{
   width: 700px;
   height: 100px;
   line-height: 100px;
-  padding-left: 200px; 
+  padding-left: 150px; 
   font-family: 'Lobster', cursive;
   font-weight: 700;
   font-size: 32px;  
@@ -93,7 +90,6 @@ nav {
   font-size : 0.5em;   /* 서브 메뉴가 있는 항목에 화살표 표시 */  
 }
 #topMenu > li > a:hover {
-  /* color:#000;  */
   color: yellow;
   text-shadow: 0 -1px #07c;  /* 글자가 너무 굵어지지 않도록 */
 }
@@ -121,7 +117,7 @@ nav {
 } 
 
 /********************************/
-/*   이미지 영역    */
+/*   top image    */
 /********************************/
 
 #topImage {
@@ -130,10 +126,9 @@ nav {
   /* object-fit: cover; */
 }
 
-
-#services {
-  padding: 6rem 0;
-}
+/********************************/
+/*   section: common   */
+/********************************/
 
 .section-container {
   display: block;
@@ -144,11 +139,20 @@ nav {
 
 .section-heading {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .text-uppercase {
   text-transform: uppercase;
 }
+
+
+
+#services {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+
 
 .images {
   display: flex;
@@ -161,16 +165,87 @@ nav {
 #languages {
   padding: 6rem 0;
   background-color: rgba(243, 248, 248, 0.8); 
-  
 }
 
+
+/*********************************/
+/* section: contact us */
+/*********************************/
 #contact-us {
-  padding: 6rem 0;
+  padding-top: 6rem;
+  /* padding-bottom: 6rem; */
+  padding-left: 0;
+  padding-right: 0;
+  /* background-color: white; */
+  height: 800px;
 }
 
-footer {
+#contact-us-section {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#contact-us-section > article {
+  width: 66%; 
+  overflow: hidden;
+  float: left;
+}
+#contact-us-section > article > #map {
   width: 100%;
-  height:100px;
+  height: 500px;
+  background-color: #ccc;
+}
+#contact-us-section > article p {
+  margin-bottom: 20px;
+}
+
+#contact-us-section > aside {
+  float: right;
+  width: 34%;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 0;
+}
+
+fieldset {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+legend{ 
+  font-size: 1.6em; 
+  margin-bottom: 20px;
+}
+label { 
+  display: block; 
+}
+input, textarea{ 
+  border: none;
+  background: #ddd;
+  padding: 10px;
+  resize: none;
+}
+label, input, textarea{ 
+  width: 90%;
+  margin-bottom: 10px;
+}
+button{
+  background: #fe6081; 
+  color: white;
+  border: none;
+  padding: 10px 40px;
+}
+button:hover{
+  background: #ff80ab;
+}
+
+/*********************************/
+/* footer */
+/*********************************/
+footer {
+  background-color: white;
+  width: 100%;
+  height: 100px;
   padding-top: 40px;
   vertical-align: middle;
   border-top:2px solid #222;
