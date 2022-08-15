@@ -1,7 +1,7 @@
 /* to import 'Lobster', cursive; fonts in #logo h1 */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* to import 'Montserrat', sans-serif; fonts in body */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
 
 * {
   margin: 0;   
@@ -13,6 +13,10 @@ a {
   text-decoration: none;  
 }
 
+p {
+  line-height: 1.75;
+}
+
 ul {
   list-style: none;
 }
@@ -21,6 +25,7 @@ body {
   /* background-color:rgb(12, 27, 38); */
   /* background-color: rgb(22, 72, 107); */
   background-color: white;
+  font-family: var("Roboto Slab");
 }
 
 #container {
@@ -39,7 +44,6 @@ body {
 header{
   width: 1200px;
   height: 100px;
-  /* background-color:rgb(12, 27, 38); */
   background-color: rgb(74, 101, 120);
   padding-left: 50px;
 }
@@ -141,27 +145,63 @@ nav {
 .section-heading {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 .text-uppercase {
   text-transform: uppercase;
 }
 
-
+/********************************/
+/*   section: servicies   */
+/********************************/
 
 #services {
   padding: 6rem 0;
-  background-color: white;
+  background-color: rgba(243, 248, 248, 0.3); 
 }
 
-
-
-.images {
+.images1 {
   display: flex;
 }
 
-.img {
-  font-size: 4em;
+.img-col1 {
+  display: inline-block;
+  text-align: center;
+  width: 33%;
+  flex: 0 0 auto;
 }
+
+.img1 {
+  font-size: 4em;
+  /* background-color: rgb(255, 200, 0, 1); */
+}
+.img1 i {
+  display: inline-block;
+  margin: 0 24px 0px 24px;
+  background-color: rgb(255, 200, 0, 1);
+  padding: 10px;
+  width: 100px;
+  height: 90px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  color: white;
+
+}
+.img1-h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: calc(1.275rem + 0.25vw);
+}
+.img1-p {
+  color: #6c757d;
+}
+
+
+/********************************/
+/*   section: languages   */
+/********************************/
 
 #languages {
   padding: 6rem 0;
@@ -172,6 +212,7 @@ nav {
 /*********************************/
 /* section: contact us */
 /*********************************/
+
 #contact-us {
   padding-top: 6rem;
   /* padding-bottom: 6rem; */
@@ -243,6 +284,7 @@ button:hover{
 /*********************************/
 /* footer */
 /*********************************/
+
 footer {
   background-color: #ffffff;
   width: 1200px;
