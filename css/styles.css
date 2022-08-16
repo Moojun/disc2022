@@ -22,10 +22,9 @@ ul {
 }
 
 body {
+  background-color: white;
   /* background-color:rgb(12, 27, 38); */
   /* background-color: rgb(22, 72, 107); */
-  background-color: white;
-  font-family: var("Roboto Slab");
 }
 
 #container {
@@ -65,16 +64,18 @@ header{
   font-family: 'Lobster', cursive;
   font-weight: 700;
   font-size: 32px;  
-  /* color: rgb(110, 201, 104); */
   color: white;
+  /* color: rgb(110, 201, 104); */
 }
 
 nav {  
   float: right; 
-  /* width: calc(100% - 900px); */
   height: 100px;  
   padding-top: 40px;  
   padding-right: 120px;
+  /* width: calc(100% - 900px); */
+  /* width: calc(100% - 900px); */
+
 }
 #topMenu {  
   height: 60px; 
@@ -87,8 +88,8 @@ nav {
   display: block;  
   color:#fff;  
   font-weight: 600; 
-  /* padding:20px 60px; */
   padding-left: 120px;
+  /* padding:20px 60px; */
   /* padding-bottom: 80px; */
   /* margin-bottom: 80px; */
 }
@@ -215,11 +216,11 @@ nav {
 
 #contact-us {
   padding-top: 6rem;
-  /* padding-bottom: 6rem; */
   padding-left: 0;
   padding-right: 0;
-  /* background-color: white; */
   height: 800px;
+  /* padding-bottom: 6rem; */
+  /* background-color: white; */
 }
 
 #contact-us-section {
@@ -290,9 +291,9 @@ footer {
   width: 1200px;
   height: 100px;
   padding-top: 40px;
-  /* vertical-align: middle; */
   border-top: 2px solid #222;
   font-family: 'Montserrat', sans-serif;
+  /* vertical-align: middle; */
 }
 
 footer .social-media {
