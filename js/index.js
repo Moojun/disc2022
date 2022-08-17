@@ -1,5 +1,14 @@
-function initMap() {
 
+let indicator = document.querySelectorAll(".indicator button");
+let lightbox = document.querySelector("#lightbox");
+let block = document.querySelector("#block");
+
+
+
+
+
+// Google Map
+function initMap() {
   let styleArray = [
     {
       featureType: "all",
