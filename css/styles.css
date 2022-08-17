@@ -141,6 +141,8 @@ nav {
   width: 100%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-heading {
@@ -151,6 +153,12 @@ nav {
 }
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.section-h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: calc(1.275rem + 0.25vw);
 }
 
 /********************************/
@@ -164,6 +172,7 @@ nav {
 
 .images1 {
   display: flex;
+  margin-top: 5rem;
 }
 
 .img-col1 {
@@ -190,11 +199,6 @@ nav {
   color: white;
 
 }
-.img1-h4 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: calc(1.275rem + 0.25vw);
-}
 .img1-p {
   color: #6c757d;
 }
@@ -207,6 +211,118 @@ nav {
 #languages {
   padding: 6rem 0;
   background-color: rgba(243, 248, 248, 0.8); 
+  display: grid;
+}
+
+.row1 {
+  /* display: flex; */
+  margin-top: 5rem;
+}
+
+.languages-item {
+  width: 25%;
+  padding-top: 30px;
+  display: inline-block;
+  background-color: rgb(226, 240, 226, 0.6);
+  margin: 0 40px;
+} 
+.languages-item-container {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+}
+
+#languages-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.img-hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 0; /* 뒤 배경 조작을 위해 */
+  width: 100%;
+}
+.languages-item-container:hover .img-hover {
+  opacity: 1;
+  cursor: pointer;  /* 마우스 커서: 손 모양 */
+}
+.img-hover-content {
+  background-color: rgba(255, 200, 0, 0.9);
+  color: white;
+  font-size: 20px;
+  padding-top: 30%;
+  border-radius: 6px;
+  height: 100%;
+  font-weight: bold; 
+}
+
+
+
+/*   section: lightbox   */
+
+#lightbox {
+  display: none;
+}
+
+#lightbox .active {
+  position: absolute; 
+  overflow: hidden;
+	background: #333;
+	width: 800px; 
+  height: 540px;
+	left: 50%; 
+  margin-left: -400px;
+	top: 50%; 
+  margin-top: -250px;
+	/* box-sizing: border-box;  */
+  padding: 30px;
+	z-index: 99; 
+  display: block;
+}
+
+#lightbox h1, #lightbox p{ 
+	color: white; text-align: center;
+	margin-bottom: 10px;
+}
+
+/* 이미지 박스 */
+figure{ 
+	width: 500px; height: 300px;
+	position: relative;
+	margin: 10px auto;
+	overflow: hidden;
+}
+figure img{
+	display: none;
+ 	position: absolute; /* relative가 아니고 absolute 라서 동일한 위치에 그림 3개 겹침 */
+}
+figure img.active{ display: block; }
+
+/* 창닫기 버튼 */
+.btn-close{
+	position: absolute;
+	top: 0px; right: 0px;
+	padding: 10px;
+	color: white; font-size: large;
+}
+.btn-close:hover{ background-color: #666; }
+
+/* 인디케이터 네비게이션: 밑에 있는 button 1, 2, 3 */
+.indicator{ text-align: center; }
+.indicator button{
+	background: #666; color: white;
+	font-size: 12px;
+	border: none; padding: 2px 5px;
+}
+.indicator button:focus{ background: #38f; } /* 마우스를 클릭하면 focus */
+
+header img {
+	width: 100px;
 }
 
 
