@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA79F3HwKaIZZGfFmXbW6esaI6fqbxti0I&callback=initMap"
     async defer></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
     <div id="container">
@@ -30,7 +30,7 @@
       </header>
 
       <div>
-        <img src="assets/languages2-1.png" id="topImage" alt="img1">
+        <img src="assets/languages1.png" id="topImage" alt="img1">
       </div>
 
       <section id="services">
@@ -43,7 +43,7 @@
               <span class="img1">
                 <i class="fa fa-bars"></i>
               </span>
-              <h4 class="img1-h4">언어 소개</h4>
+              <h4 class="section-h4">언어 소개</h4>
               <p class="img1-p">각 프로그래밍 언어에 대한<br>
                 전반적인 소개를 통해<br>
                 해당 프로그래밍 언어를<br>
@@ -54,7 +54,7 @@
               <span class="img1">
                 <i class="fa fa-book"></i>
               </span>
-              <h4 class="img1-h4">책/강의 추천</h4>
+              <h4 class="section-h4">책/강의 추천</h4>
               <p class="img1-p">현재 자신의 수준에 적합한<br> 
                 프로그래밍 언어 책과<br>
                 인터넷 강의를<br>
@@ -65,7 +65,7 @@
               <span class="img1">
                 <i class="fa fa-location-arrow"></i>
               </span>
-              <h4 class="img1-h4">사용 분야</h4>
+              <h4 class="section-h4">사용 분야</h4>
               <p class="img1-p">각 프로그래밍 언어가<br>
                 실생활에서 어떻게 사용되고 있는지<br>
                 알 수 있어요 
@@ -79,6 +79,52 @@
         <div class="section-container">
           <div>
             <h2 class="section-heading text-uppercase">Programming Languages</h2>
+          </div>
+          <div class="row1">
+            <div>
+              <div class="languages-item">
+                <div class="languages-item-container">
+                  <img src="./assets/C-image.png" id="languages-image" 
+                alt="C image" onclick="lightbox_open(1)">
+                  <div class="img-hover">
+                    <div class="img-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-caption">
+                  <h4 class="section-h4">C 언어</h4>
+                </div>
+              </div>
+              <div class="languages-item">
+                <div class="languages-item-container">
+                  <img src="./assets/Java-image.png" id="languages-image" 
+                alt="Java image" onclick="lightbox_open(2)">
+                  <div class="img-hover">
+                    <div class="img-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-caption">
+                  <h4 class="section-h4">Java</h4>
+                </div>
+              </div>
+              <div class="languages-item">
+                <div class="languages-item-container">
+                  <img src="./assets/Python-image.png" id="languages-image" 
+                alt="Python image" onclick="lightbox_open(3)">
+                  <div class="img-hover">
+                    <div class="img-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-caption">
+                  <h4 class="section-h4">Python</h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -147,5 +193,6 @@
         <p class="copyright">copyright (c) mjkim@seoultech.ac.kr</p><br><br>
       </footer> 
     </div>
+    
   </body>
 </html>
