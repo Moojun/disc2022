@@ -6,7 +6,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="js/index.js"></script>
+    <!-- <script src="js/index.js"></script> -->
   </head>
   <body>
     <div id="container">
@@ -82,10 +82,10 @@
             <div>
               <div class="languages-item">
                 <div class="languages-item-container">
-                  <img src="./assets/C-image.png" id="languages-image" 
-                alt="C image" onclick="lightbox_open(1)">
+                  <img src="./assets/C-image.png" id="languages-image""
+                alt="C image"  />
                   <div class="img-hover">
-                    <div class="img-hover-content">
+                    <div class="img-hover-content" onclick="lightbox_open(1)">
                       <i class="fas fa-plus fa-3x"></i>
                     </div>
                   </div>
@@ -97,9 +97,9 @@
               <div class="languages-item">
                 <div class="languages-item-container">
                   <img src="./assets/Java-image.png" id="languages-image" 
-                alt="Java image" onclick="lightbox_open(2)">
+                alt="Java image">
                   <div class="img-hover">
-                    <div class="img-hover-content">
+                    <div class="img-hover-content" onclick="lightbox_open(2)">
                       <i class="fas fa-plus fa-3x"></i>
                     </div>
                   </div>
@@ -111,9 +111,9 @@
               <div class="languages-item">
                 <div class="languages-item-container">
                   <img src="./assets/Python-image.png" id="languages-image" 
-                alt="Python image" onclick="lightbox_open(3)">
+                alt="Python image">
                   <div class="img-hover">
-                    <div class="img-hover-content">
+                    <div class="img-hover-content" onclick="lightbox_open(3)">
                       <i class="fas fa-plus fa-3x"></i>
                     </div>
                   </div>
@@ -191,7 +191,39 @@
         <p class="copyright">copyright (c) mjkim@seoultech.ac.kr</p><br><br>
       </footer> 
     </div>
+
+    <!-- Programming Languages lightbox-->
+    <div id="block"></div>
+    <div id="lightbox">
+      <div class="lightbox-contents">
+        <h1>C 언어</h1>
+        <p>C 언어 내용입니다 <br><br></p>
+      </div>
+      <div class="lightbox-contents">
+        <h1>Java</h1>
+        <p>Java 언어 내용입니다 <br><br></p>
+      </div>
+      <div class="lightbox-contents">
+        <h1>Python</h1>
+        <p>Python 언어 내용입니다 <br><br></p>
+      </div>
+      <figure>
+        <img src="./assets/C-image.png" class="active" alt="" />
+        <img src="./assets/Java-image.png" alt="" />
+        <img src="./assets/Python-image.png" alt="" />
+      </figure>
+    
+      <div class="indicator">
+        <button onclick="change_img(this.innerHTML)">1</button>
+        <button onclick="change_img(this.innerHTML)">2</button>
+        <button onclick="change_img(this.innerHTML)">3</button>
+      </div>	
+      <div class="btn-close" onclick="lightbox_close()">X</div>
+    </div>
+    <!-- end lightbox -->
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA79F3HwKaIZZGfFmXbW6esaI6fqbxti0I	&callback=initMap"
     async defer></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
