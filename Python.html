@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Moojun's HomePage</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/subStyles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <a href="index.html"><span id="logo">Newbie Guideline</span></a>
+        <span id="logo2">Python</span>
+        <nav>
+          <ul id="topMenu">
+            <li><a href="#">Menu</a>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="C.html">C 언어</a></li>
+                <li><a href="Java.html">Java</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div>
+        <img src="assets/languages1.png" id="topImage" alt="img1">
+      </div>
+
+      <section id="services">
+        <div class="section-container">
+          <div>
+            <h2 class="section-heading text-uppercase">Python 특징</h2>
+          </div>
+          <div class="images1">
+            <div class="img-col1">
+              <span class="img1">
+                <i class="fa-solid fa-1"></i>
+              </span>
+              <h4 class="section-h4">test</h4>
+              <p class="img1-p">각 프로그래밍 언어에 대한<br>
+                전반적인 소개를 통해<br>
+                해당 프로그래밍 언어를<br>
+                간단하게 알려줄 거에요
+              </p>
+            </div>
+            <div class="img-col1">
+              <span class="img1">
+                <i class="fa-solid fa-2"></i>
+              </span>
+              <h4 class="section-h4">test</h4>
+              <p class="img1-p">현재 자신의 수준에 적합한<br> 
+                프로그래밍 언어 책과<br>
+                인터넷 강의를<br>
+                선택할 수 있어요
+              </p>
+            </div>
+            <div class="img-col1">
+              <span class="img1">
+                <i class="fa-solid fa-3"></i>
+              </span>
+              <h4 class="section-h4">test</h4>
+              <p class="img1-p">각 프로그래밍 언어가<br>
+                실생활에서 어떻게 사용되고 있는지<br>
+                알 수 있어요 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="languages">
+        <div class="section-container">
+          <div>
+            <h2 class="section-heading text-uppercase">책/강의 추천</h2>
+          </div>
+          <div class="row1">
+            <div>
+              <div class="languages-item">
+                <div class="languages-item-container">
+                  click here ↓<br><br>
+                  <img src="./assets/Python/Jump-Python.png" id="languages-image" 
+                alt="">
+                  <div class="img-hover">
+                    <div class="img-hover-content" onclick="lightbox_open(1)">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-caption">
+                  <h4 class="section-h4">점프 투 파이썬</h4>
+                </div>
+              </div>
+              <div class="languages-item">
+                <div class="languages-item-container">
+                  click here ↓<br><br>
+                  <img src="./assets/Python/Self-Python.png" id="languages-image" 
+                alt="">
+                  <div class="img-hover">
+                    <div class="img-hover-content" onclick="lightbox_open(2)">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-caption">
+                  <h4 class="section-h4">혼자 공부하는 파이썬</h4>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div id="blank-div"></div>
+
+          <div class="row2">
+            <div>
+              <div class="languages-item">
+                <div class="languages-item-container">
+                  click here ↓<br><br>
+                  <img src="./assets/Python/Standard-Python.png" id="languages-image""
+                alt="">
+                  <div class="img-hover">
+                    <div class="img-hover-content" onclick="lightbox_open(3)">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-caption">
+                  <h4 class="section-h4">프로그래밍의 정석: 파이썬</h4>
+                </div>
+              </div>
+              <div class="languages-item-big">
+                <div class="languages-item-container">
+                  click here ↓<br><br>
+                  <img src="./assets/Python/inflearn-python.png" id="languages-image" 
+                alt="">
+                  <div class="img-hover">
+                    <div class="img-hover-content" onclick="lightbox_open(4)">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-caption">
+                  <h4 class="section-h4">프로그래밍 시작하기: 파이썬 입문</h4>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="social-media">
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="copyright">copyright (c) mjkim@seoultech.ac.kr</p><br><br>
+      </footer> 
+    </div>
+
+    <!-- Programming Languages lightbox-->
+    <div id="block"></div>
+    <div id="lightbox">
+      <div class="lightbox-contents">
+        <h1>점프 투 파이썬</h1>
+        <p>프로그래밍 언어를 처음 배우는 사람에게 추천하는 교재입니다.<br>
+          <a href="https://wikidocs.net/book/1" blank="_target">wikidocs</a> 사이트에 교재가 
+          무료고 공개되어 있으며, 인터넷으로 책을 구매할 수도 있습니다. <br>
+          교재만으로 학습하기 조금 힘들면, <a href="https://www.youtube.com/watch?v=KL1MIuBfWe0&list=PLU9-uwewPMe2AX9o9hFgv-nRvOcBdzvP5" blank="_target">유튜브</a> 에 저자가 업로드한
+          무료 강의가 있으니 <br>
+          참고해서 공부하면 좋습니다. 
+      </div>
+      
+      <div class="lightbox-contents">
+        <h1>혼자 공부하는 파이썬</h1>
+        <p>프로그래밍 언어를 처음 배우는 사람에게 추천하는 교재입니다.<br>
+          그림이나 사진 등 시각 자료가 적절하게 포함되어 있으며, 단원마다 확인문제를 통해 <br>
+          배운 내용을 복습할 수 있습니다. <br>
+          또한, <a href="https://hongong.hanbit.co.kr/" blank="_target">링크</a> 에서 무료 동영상 강의를 제공합니다.
+
+          <br></p>
+      </div>
+      <div class="lightbox-contents">
+        <h1>프로그래밍의 정석: 파이썬</h1>
+        <p>프로그래밍 언어 입문자보다는, 다른 프로그래밍 언어를 공부한 적이 있는 사람에게 추천하는 교재입니다. <br>
+          이론과 실습의 비율이 적절하게 구성되어 있으며, 개념 외에 여러 알고리즘 내용도 교재에 수록되어 있습니다. <br>
+          마지막 부분에는 프로젝트 파트가 있는데, 설명이 매우 자세하게 나와 있어서 학습에 많은 도움이 될 것입니다. 
+          
+          <br></p>
+      </div>
+      <div class="lightbox-contents">
+        <h1>프로그래밍 시작하기: 파이썬 입문</h1>
+        <p>프로그래밍 언어 입문자보다는, 다른 프로그래밍 언어를 공부한 적이 있는 사람에게 추천하는 강의입니다. <br>
+          강의마다 소스코드 교안이 첨부되어 있어서, 강의 수강과 복습이 용이한 게 특징입니다. <br>
+          강의는 <a href="https://www.inflearn.com/course/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9E%85%EB%AC%B8-%EC%9D%B8%ED%94%84%EB%9F%B0-%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90#" target="blank">인프런</a> 사이트에서 확인 가능하며,
+          유료 강의입니다.
+          <br></p>
+      </div>
+    
+      <figure>
+        <img src="./assets/Python/Jump-Python.png" class="active" alt="" />
+        <img src="./assets/Python/Self-Python.png" alt="" />
+        <img src="./assets/Python/Standard-Python.png" alt="" />
+        <img src="./assets/Python/inflearn-python.png" alt="" />
+      </figure>
+    
+      <div class="indicator">
+        <button onclick="change_img(this.innerHTML)">1</button>
+        <button onclick="change_img(this.innerHTML)">2</button>
+        <button onclick="change_img(this.innerHTML)">3</button>
+        <button onclick="change_img(this.innerHTML)">4</button>
+      </div>	
+      <div class="btn-close" onclick="lightbox_close()">X</div>
+    </div>
+    <!-- end lightbox -->
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
