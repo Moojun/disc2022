@@ -42,6 +42,8 @@ function change_img(val){
 /* Calendar */
 let date = new Date();
 
+let textObj = {};  // div tag에 담을 Object 선언
+
 const renderCalender = () => {
   const viewYear = date.getFullYear();
   const viewMonth = date.getMonth();
@@ -97,27 +99,21 @@ const renderCalender = () => {
   }
 
   let text = document.querySelector('#text-part');
-  let date2 = new Date();
-  let todayMonth = date2.getMonth() + 1;
-
-  let textObj = {};  // Object 선언
-
-  let useObj = {};
 
   document.querySelectorAll('.date').forEach((date, i) => {
-    //console.log(i + date);
+    // console.log("i is: " + i + ", date is: " + date);
     date.onclick = (e) => {
         let schedule = prompt("Enter the schedule")
         // e.target.firstChild.innerHTML += "<span class='birth'>" + schedule + "</span>"
 
-        if ((textObj[todayMonth + "/" + i] == null)) {
-          textObj[todayMonth + "/" + i] = "";
+        if ((textObj[(viewMonth+1) + "/" + i] == null)) {
+          textObj[(viewMonth+1) + "/" + i] = "";
         }
 
         if (schedule == null) {
           return;
         }
-        textObj[todayMonth + "/" + i] += "<li>" + schedule + "</li>";
+        textObj[(viewMonth+1) + "/" + i] += "<li>" + schedule + "</li>";
 
         //Object Key 오름차순 정렬
         let out1 = Object.fromEntries(
@@ -133,7 +129,7 @@ const renderCalender = () => {
         }
       }
 
-  });
+  }); 
 
 };
 
@@ -152,7 +148,7 @@ const nextMonth = () => {
 }
 
 const goToday = () => {
-  date = new Date();
+  // date = new Date();
   renderCalender();
 };
 
